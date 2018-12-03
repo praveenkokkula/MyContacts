@@ -1,0 +1,544 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1B2A981921AE582D00ED38E5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B2A981821AE582D00ED38E5 /* AppDelegate.swift */; };
+		1B2A981B21AE582D00ED38E5 /* ContactViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B2A981A21AE582D00ED38E5 /* ContactViewController.swift */; };
+		1B2A981E21AE582D00ED38E5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1B2A981C21AE582D00ED38E5 /* Main.storyboard */; };
+		1B2A982121AE582D00ED38E5 /* UIContacts.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 1B2A981F21AE582D00ED38E5 /* UIContacts.xcdatamodeld */; };
+		1B2A982321AE582E00ED38E5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1B2A982221AE582E00ED38E5 /* Assets.xcassets */; };
+		1B2A982621AE582E00ED38E5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1B2A982421AE582E00ED38E5 /* LaunchScreen.storyboard */; };
+		1B2A983021AE5C8A00ED38E5 /* ContactsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B2A982F21AE5C8A00ED38E5 /* ContactsTableViewCell.swift */; };
+		1B2A983221AE875600ED38E5 /* AddContactViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B2A983121AE875600ED38E5 /* AddContactViewController.swift */; };
+		1B2A983921AEDBFA00ED38E5 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1B2A983421AED7FC00ED38E5 /* CoreData.framework */; };
+		1B2A983B21AFB70800ED38E5 /* Contacts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B2A983A21AFB70800ED38E5 /* Contacts.swift */; };
+		1BE3DF1121B261BF00CF675B /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BE3DF1021B261BF00CF675B /* Constants.swift */; };
+		1BE3DF1321B264ED00CF675B /* CountryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BE3DF1221B264ED00CF675B /* CountryViewController.swift */; };
+		1BE3DF1521B2650700CF675B /* CountryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BE3DF1421B2650700CF675B /* CountryTableViewCell.swift */; };
+		1BE3DF2221B3CB0D00CF675B /* SF-Pro-Display-Black.otf in Resources */ = {isa = PBXBuildFile; fileRef = 1BE3DF2121B3CB0D00CF675B /* SF-Pro-Display-Black.otf */; };
+		1BE3DF4721B3FCD400CF675B /* SF-Pro-Display-BlackItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 1BE3DF2E21B3CB1A00CF675B /* SF-Pro-Display-BlackItalic.otf */; };
+		1BE3DF4821B3FCD400CF675B /* SF-Pro-Display-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 1BE3DF2421B3CB1600CF675B /* SF-Pro-Display-Bold.otf */; };
+		1BE3DF4921B3FCD400CF675B /* SF-Pro-Display-BoldItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 1BE3DF3E21B3CB1E00CF675B /* SF-Pro-Display-BoldItalic.otf */; };
+		1BE3DF4A21B3FCD400CF675B /* SF-Pro-Display-Heavy.otf in Resources */ = {isa = PBXBuildFile; fileRef = 1BE3DF2B21B3CB1900CF675B /* SF-Pro-Display-Heavy.otf */; };
+		1BE3DF4B21B3FCD400CF675B /* SF-Pro-Display-HeavyItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 1BE3DF3C21B3CB1D00CF675B /* SF-Pro-Display-HeavyItalic.otf */; };
+		1BE3DF4C21B3FCD400CF675B /* SF-Pro-Display-Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = 1BE3DF2F21B3CB1A00CF675B /* SF-Pro-Display-Light.otf */; };
+		1BE3DF4D21B3FCD400CF675B /* SF-Pro-Display-LightItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 1BE3DF3921B3CB1C00CF675B /* SF-Pro-Display-LightItalic.otf */; };
+		1BE3DF4E21B3FCD400CF675B /* SF-Pro-Display-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = 1BE3DF4021B3CB1E00CF675B /* SF-Pro-Display-Medium.otf */; };
+		1BE3DF4F21B3FCD400CF675B /* SF-Pro-Display-MediumItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 1BE3DF2721B3CB1800CF675B /* SF-Pro-Display-MediumItalic.otf */; };
+		1BE3DF5021B3FCD400CF675B /* SF-Pro-Display-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 1BE3DF2521B3CB1700CF675B /* SF-Pro-Display-Regular.otf */; };
+		1BE3DF5121B3FCD400CF675B /* SF-Pro-Display-RegularItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 1BE3DF3721B3CB1C00CF675B /* SF-Pro-Display-RegularItalic.otf */; };
+		1BE3DF5221B3FCD400CF675B /* SF-Pro-Display-Semibold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 1BE3DF3621B3CB1C00CF675B /* SF-Pro-Display-Semibold.otf */; };
+		1BE3DF5321B3FCD400CF675B /* SF-Pro-Display-SemiboldItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 1BE3DF2921B3CB1900CF675B /* SF-Pro-Display-SemiboldItalic.otf */; };
+		1BE3DF5421B3FCD400CF675B /* SF-Pro-Display-Thin.otf in Resources */ = {isa = PBXBuildFile; fileRef = 1BE3DF3321B3CB1B00CF675B /* SF-Pro-Display-Thin.otf */; };
+		1BE3DF5521B3FCD400CF675B /* SF-Pro-Display-ThinItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 1BE3DF2A21B3CB1900CF675B /* SF-Pro-Display-ThinItalic.otf */; };
+		1BE3DF5621B3FCD400CF675B /* SF-Pro-Display-Ultralight.otf in Resources */ = {isa = PBXBuildFile; fileRef = 1BE3DF2621B3CB1800CF675B /* SF-Pro-Display-Ultralight.otf */; };
+		1BE3DF5721B3FCD400CF675B /* SF-Pro-Display-UltralightItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 1BE3DF3221B3CB1B00CF675B /* SF-Pro-Display-UltralightItalic.otf */; };
+		1BE3DF5821B3FCD400CF675B /* SF-Pro-Text-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 1BE3DF3521B3CB1B00CF675B /* SF-Pro-Text-Bold.otf */; };
+		1BE3DF5921B3FCD400CF675B /* SF-Pro-Text-BoldItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 1BE3DF3121B3CB1B00CF675B /* SF-Pro-Text-BoldItalic.otf */; };
+		1BE3DF5A21B3FCD400CF675B /* SF-Pro-Text-Heavy.otf in Resources */ = {isa = PBXBuildFile; fileRef = 1BE3DF3B21B3CB1D00CF675B /* SF-Pro-Text-Heavy.otf */; };
+		1BE3DF5B21B3FCD400CF675B /* SF-Pro-Text-HeavyItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 1BE3DF3821B3CB1C00CF675B /* SF-Pro-Text-HeavyItalic.otf */; };
+		1BE3DF5C21B3FCD400CF675B /* SF-Pro-Text-Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = 1BE3DF3F21B3CB1E00CF675B /* SF-Pro-Text-Light.otf */; };
+		1BE3DF5D21B3FCD400CF675B /* SF-Pro-Text-LightItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 1BE3DF3D21B3CB1D00CF675B /* SF-Pro-Text-LightItalic.otf */; };
+		1BE3DF5E21B3FCD400CF675B /* SF-Pro-Text-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = 1BE3DF3421B3CB1B00CF675B /* SF-Pro-Text-Medium.otf */; };
+		1BE3DF5F21B3FCD400CF675B /* SF-Pro-Text-MediumItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 1BE3DF2C21B3CB1A00CF675B /* SF-Pro-Text-MediumItalic.otf */; };
+		1BE3DF6021B3FCD400CF675B /* SF-Pro-Text-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 1BE3DF2D21B3CB1A00CF675B /* SF-Pro-Text-Regular.otf */; };
+		1BE3DF6121B3FCD400CF675B /* SF-Pro-Text-RegularItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 1BE3DF3A21B3CB1D00CF675B /* SF-Pro-Text-RegularItalic.otf */; };
+		1BE3DF6221B3FCD400CF675B /* SF-Pro-Text-Semibold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 1BE3DF2321B3CB1600CF675B /* SF-Pro-Text-Semibold.otf */; };
+		1BE3DF6321B3FCD400CF675B /* SF-Pro-Text-SemiboldItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 1BE3DF3021B3CB1A00CF675B /* SF-Pro-Text-SemiboldItalic.otf */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		1B2A981521AE582D00ED38E5 /* UIContacts.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UIContacts.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1B2A981821AE582D00ED38E5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		1B2A981A21AE582D00ED38E5 /* ContactViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactViewController.swift; sourceTree = "<group>"; };
+		1B2A981D21AE582D00ED38E5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		1B2A982021AE582D00ED38E5 /* UIContacts.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = UIContacts.xcdatamodel; sourceTree = "<group>"; };
+		1B2A982221AE582E00ED38E5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		1B2A982521AE582E00ED38E5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		1B2A982721AE582E00ED38E5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1B2A982F21AE5C8A00ED38E5 /* ContactsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsTableViewCell.swift; sourceTree = "<group>"; };
+		1B2A983121AE875600ED38E5 /* AddContactViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddContactViewController.swift; sourceTree = "<group>"; };
+		1B2A983421AED7FC00ED38E5 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		1B2A983A21AFB70800ED38E5 /* Contacts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Contacts.swift; sourceTree = "<group>"; };
+		1BE3DF1021B261BF00CF675B /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		1BE3DF1221B264ED00CF675B /* CountryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryViewController.swift; sourceTree = "<group>"; };
+		1BE3DF1421B2650700CF675B /* CountryTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryTableViewCell.swift; sourceTree = "<group>"; };
+		1BE3DF2121B3CB0D00CF675B /* SF-Pro-Display-Black.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Display-Black.otf"; sourceTree = "<group>"; };
+		1BE3DF2321B3CB1600CF675B /* SF-Pro-Text-Semibold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Text-Semibold.otf"; sourceTree = "<group>"; };
+		1BE3DF2421B3CB1600CF675B /* SF-Pro-Display-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Display-Bold.otf"; sourceTree = "<group>"; };
+		1BE3DF2521B3CB1700CF675B /* SF-Pro-Display-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Display-Regular.otf"; sourceTree = "<group>"; };
+		1BE3DF2621B3CB1800CF675B /* SF-Pro-Display-Ultralight.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Display-Ultralight.otf"; sourceTree = "<group>"; };
+		1BE3DF2721B3CB1800CF675B /* SF-Pro-Display-MediumItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Display-MediumItalic.otf"; sourceTree = "<group>"; };
+		1BE3DF2921B3CB1900CF675B /* SF-Pro-Display-SemiboldItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Display-SemiboldItalic.otf"; sourceTree = "<group>"; };
+		1BE3DF2A21B3CB1900CF675B /* SF-Pro-Display-ThinItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Display-ThinItalic.otf"; sourceTree = "<group>"; };
+		1BE3DF2B21B3CB1900CF675B /* SF-Pro-Display-Heavy.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Display-Heavy.otf"; sourceTree = "<group>"; };
+		1BE3DF2C21B3CB1A00CF675B /* SF-Pro-Text-MediumItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Text-MediumItalic.otf"; sourceTree = "<group>"; };
+		1BE3DF2D21B3CB1A00CF675B /* SF-Pro-Text-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Text-Regular.otf"; sourceTree = "<group>"; };
+		1BE3DF2E21B3CB1A00CF675B /* SF-Pro-Display-BlackItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Display-BlackItalic.otf"; sourceTree = "<group>"; };
+		1BE3DF2F21B3CB1A00CF675B /* SF-Pro-Display-Light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Display-Light.otf"; sourceTree = "<group>"; };
+		1BE3DF3021B3CB1A00CF675B /* SF-Pro-Text-SemiboldItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Text-SemiboldItalic.otf"; sourceTree = "<group>"; };
+		1BE3DF3121B3CB1B00CF675B /* SF-Pro-Text-BoldItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Text-BoldItalic.otf"; sourceTree = "<group>"; };
+		1BE3DF3221B3CB1B00CF675B /* SF-Pro-Display-UltralightItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Display-UltralightItalic.otf"; sourceTree = "<group>"; };
+		1BE3DF3321B3CB1B00CF675B /* SF-Pro-Display-Thin.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Display-Thin.otf"; sourceTree = "<group>"; };
+		1BE3DF3421B3CB1B00CF675B /* SF-Pro-Text-Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Text-Medium.otf"; sourceTree = "<group>"; };
+		1BE3DF3521B3CB1B00CF675B /* SF-Pro-Text-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Text-Bold.otf"; sourceTree = "<group>"; };
+		1BE3DF3621B3CB1C00CF675B /* SF-Pro-Display-Semibold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Display-Semibold.otf"; sourceTree = "<group>"; };
+		1BE3DF3721B3CB1C00CF675B /* SF-Pro-Display-RegularItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Display-RegularItalic.otf"; sourceTree = "<group>"; };
+		1BE3DF3821B3CB1C00CF675B /* SF-Pro-Text-HeavyItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Text-HeavyItalic.otf"; sourceTree = "<group>"; };
+		1BE3DF3921B3CB1C00CF675B /* SF-Pro-Display-LightItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Display-LightItalic.otf"; sourceTree = "<group>"; };
+		1BE3DF3A21B3CB1D00CF675B /* SF-Pro-Text-RegularItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Text-RegularItalic.otf"; sourceTree = "<group>"; };
+		1BE3DF3B21B3CB1D00CF675B /* SF-Pro-Text-Heavy.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Text-Heavy.otf"; sourceTree = "<group>"; };
+		1BE3DF3C21B3CB1D00CF675B /* SF-Pro-Display-HeavyItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Display-HeavyItalic.otf"; sourceTree = "<group>"; };
+		1BE3DF3D21B3CB1D00CF675B /* SF-Pro-Text-LightItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Text-LightItalic.otf"; sourceTree = "<group>"; };
+		1BE3DF3E21B3CB1E00CF675B /* SF-Pro-Display-BoldItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Display-BoldItalic.otf"; sourceTree = "<group>"; };
+		1BE3DF3F21B3CB1E00CF675B /* SF-Pro-Text-Light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Text-Light.otf"; sourceTree = "<group>"; };
+		1BE3DF4021B3CB1E00CF675B /* SF-Pro-Display-Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Display-Medium.otf"; sourceTree = "<group>"; };
+		1BE3DF4221B3CB4200CF675B /* SF-Pro-Display-Black.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Display-Black.otf"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1B2A981221AE582D00ED38E5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1B2A983921AEDBFA00ED38E5 /* CoreData.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1B2A980C21AE582D00ED38E5 = {
+			isa = PBXGroup;
+			children = (
+				1B2A981721AE582D00ED38E5 /* UIContacts */,
+				1B2A981621AE582D00ED38E5 /* Products */,
+				1B2A983321AED7FB00ED38E5 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		1B2A981621AE582D00ED38E5 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1B2A981521AE582D00ED38E5 /* UIContacts.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1B2A981721AE582D00ED38E5 /* UIContacts */ = {
+			isa = PBXGroup;
+			children = (
+				1BE3DF2021B3CAFA00CF675B /* CustomFonts */,
+				1B2A981821AE582D00ED38E5 /* AppDelegate.swift */,
+				1BE3DF1C21B28E7E00CF675B /* Util */,
+				1BE3DF1B21B28E4600CF675B /* ViewController */,
+				1BE3DF1A21B28E2500CF675B /* Model */,
+				1B2A982221AE582E00ED38E5 /* Assets.xcassets */,
+				1B2A982421AE582E00ED38E5 /* LaunchScreen.storyboard */,
+				1B2A982721AE582E00ED38E5 /* Info.plist */,
+				1B2A982F21AE5C8A00ED38E5 /* ContactsTableViewCell.swift */,
+				1BE3DF1421B2650700CF675B /* CountryTableViewCell.swift */,
+				1B2A981F21AE582D00ED38E5 /* UIContacts.xcdatamodeld */,
+			);
+			path = UIContacts;
+			sourceTree = "<group>";
+		};
+		1B2A983321AED7FB00ED38E5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1B2A983421AED7FC00ED38E5 /* CoreData.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		1BE3DF1A21B28E2500CF675B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				1B2A983A21AFB70800ED38E5 /* Contacts.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		1BE3DF1B21B28E4600CF675B /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				1BE3DF1221B264ED00CF675B /* CountryViewController.swift */,
+				1B2A981A21AE582D00ED38E5 /* ContactViewController.swift */,
+				1B2A983121AE875600ED38E5 /* AddContactViewController.swift */,
+				1B2A981C21AE582D00ED38E5 /* Main.storyboard */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		1BE3DF1C21B28E7E00CF675B /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				1BE3DF1021B261BF00CF675B /* Constants.swift */,
+			);
+			path = Util;
+			sourceTree = "<group>";
+		};
+		1BE3DF2021B3CAFA00CF675B /* CustomFonts */ = {
+			isa = PBXGroup;
+			children = (
+				1BE3DF2E21B3CB1A00CF675B /* SF-Pro-Display-BlackItalic.otf */,
+				1BE3DF4221B3CB4200CF675B /* SF-Pro-Display-Black.otf */,
+				1BE3DF2421B3CB1600CF675B /* SF-Pro-Display-Bold.otf */,
+				1BE3DF3E21B3CB1E00CF675B /* SF-Pro-Display-BoldItalic.otf */,
+				1BE3DF2B21B3CB1900CF675B /* SF-Pro-Display-Heavy.otf */,
+				1BE3DF3C21B3CB1D00CF675B /* SF-Pro-Display-HeavyItalic.otf */,
+				1BE3DF2F21B3CB1A00CF675B /* SF-Pro-Display-Light.otf */,
+				1BE3DF3921B3CB1C00CF675B /* SF-Pro-Display-LightItalic.otf */,
+				1BE3DF4021B3CB1E00CF675B /* SF-Pro-Display-Medium.otf */,
+				1BE3DF2721B3CB1800CF675B /* SF-Pro-Display-MediumItalic.otf */,
+				1BE3DF2521B3CB1700CF675B /* SF-Pro-Display-Regular.otf */,
+				1BE3DF3721B3CB1C00CF675B /* SF-Pro-Display-RegularItalic.otf */,
+				1BE3DF3621B3CB1C00CF675B /* SF-Pro-Display-Semibold.otf */,
+				1BE3DF2921B3CB1900CF675B /* SF-Pro-Display-SemiboldItalic.otf */,
+				1BE3DF3321B3CB1B00CF675B /* SF-Pro-Display-Thin.otf */,
+				1BE3DF2A21B3CB1900CF675B /* SF-Pro-Display-ThinItalic.otf */,
+				1BE3DF2621B3CB1800CF675B /* SF-Pro-Display-Ultralight.otf */,
+				1BE3DF3221B3CB1B00CF675B /* SF-Pro-Display-UltralightItalic.otf */,
+				1BE3DF3521B3CB1B00CF675B /* SF-Pro-Text-Bold.otf */,
+				1BE3DF3121B3CB1B00CF675B /* SF-Pro-Text-BoldItalic.otf */,
+				1BE3DF3B21B3CB1D00CF675B /* SF-Pro-Text-Heavy.otf */,
+				1BE3DF3821B3CB1C00CF675B /* SF-Pro-Text-HeavyItalic.otf */,
+				1BE3DF3F21B3CB1E00CF675B /* SF-Pro-Text-Light.otf */,
+				1BE3DF3D21B3CB1D00CF675B /* SF-Pro-Text-LightItalic.otf */,
+				1BE3DF3421B3CB1B00CF675B /* SF-Pro-Text-Medium.otf */,
+				1BE3DF2C21B3CB1A00CF675B /* SF-Pro-Text-MediumItalic.otf */,
+				1BE3DF2D21B3CB1A00CF675B /* SF-Pro-Text-Regular.otf */,
+				1BE3DF3A21B3CB1D00CF675B /* SF-Pro-Text-RegularItalic.otf */,
+				1BE3DF2321B3CB1600CF675B /* SF-Pro-Text-Semibold.otf */,
+				1BE3DF3021B3CB1A00CF675B /* SF-Pro-Text-SemiboldItalic.otf */,
+				1BE3DF2121B3CB0D00CF675B /* SF-Pro-Display-Black.otf */,
+			);
+			path = CustomFonts;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1B2A981421AE582D00ED38E5 /* UIContacts */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1B2A982A21AE582E00ED38E5 /* Build configuration list for PBXNativeTarget "UIContacts" */;
+			buildPhases = (
+				1B2A981121AE582D00ED38E5 /* Sources */,
+				1B2A981221AE582D00ED38E5 /* Frameworks */,
+				1B2A981321AE582D00ED38E5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = UIContacts;
+			productName = UIContacts;
+			productReference = 1B2A981521AE582D00ED38E5 /* UIContacts.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1B2A980D21AE582D00ED38E5 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0940;
+				LastUpgradeCheck = 0940;
+				ORGANIZATIONNAME = TCS;
+				TargetAttributes = {
+					1B2A981421AE582D00ED38E5 = {
+						CreatedOnToolsVersion = 9.4;
+						ProvisioningStyle = Manual;
+					};
+				};
+			};
+			buildConfigurationList = 1B2A981021AE582D00ED38E5 /* Build configuration list for PBXProject "UIContacts" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 1B2A980C21AE582D00ED38E5;
+			productRefGroup = 1B2A981621AE582D00ED38E5 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1B2A981421AE582D00ED38E5 /* UIContacts */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1B2A981321AE582D00ED38E5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1BE3DF4721B3FCD400CF675B /* SF-Pro-Display-BlackItalic.otf in Resources */,
+				1BE3DF2221B3CB0D00CF675B /* SF-Pro-Display-Black.otf in Resources */,
+				1BE3DF4821B3FCD400CF675B /* SF-Pro-Display-Bold.otf in Resources */,
+				1BE3DF4921B3FCD400CF675B /* SF-Pro-Display-BoldItalic.otf in Resources */,
+				1BE3DF4A21B3FCD400CF675B /* SF-Pro-Display-Heavy.otf in Resources */,
+				1BE3DF4B21B3FCD400CF675B /* SF-Pro-Display-HeavyItalic.otf in Resources */,
+				1BE3DF4C21B3FCD400CF675B /* SF-Pro-Display-Light.otf in Resources */,
+				1BE3DF4D21B3FCD400CF675B /* SF-Pro-Display-LightItalic.otf in Resources */,
+				1BE3DF4E21B3FCD400CF675B /* SF-Pro-Display-Medium.otf in Resources */,
+				1BE3DF4F21B3FCD400CF675B /* SF-Pro-Display-MediumItalic.otf in Resources */,
+				1BE3DF5021B3FCD400CF675B /* SF-Pro-Display-Regular.otf in Resources */,
+				1BE3DF5121B3FCD400CF675B /* SF-Pro-Display-RegularItalic.otf in Resources */,
+				1BE3DF5221B3FCD400CF675B /* SF-Pro-Display-Semibold.otf in Resources */,
+				1BE3DF5321B3FCD400CF675B /* SF-Pro-Display-SemiboldItalic.otf in Resources */,
+				1BE3DF5421B3FCD400CF675B /* SF-Pro-Display-Thin.otf in Resources */,
+				1BE3DF5521B3FCD400CF675B /* SF-Pro-Display-ThinItalic.otf in Resources */,
+				1BE3DF5621B3FCD400CF675B /* SF-Pro-Display-Ultralight.otf in Resources */,
+				1BE3DF5721B3FCD400CF675B /* SF-Pro-Display-UltralightItalic.otf in Resources */,
+				1BE3DF5821B3FCD400CF675B /* SF-Pro-Text-Bold.otf in Resources */,
+				1BE3DF5921B3FCD400CF675B /* SF-Pro-Text-BoldItalic.otf in Resources */,
+				1BE3DF5A21B3FCD400CF675B /* SF-Pro-Text-Heavy.otf in Resources */,
+				1BE3DF5B21B3FCD400CF675B /* SF-Pro-Text-HeavyItalic.otf in Resources */,
+				1BE3DF5C21B3FCD400CF675B /* SF-Pro-Text-Light.otf in Resources */,
+				1BE3DF5D21B3FCD400CF675B /* SF-Pro-Text-LightItalic.otf in Resources */,
+				1BE3DF5E21B3FCD400CF675B /* SF-Pro-Text-Medium.otf in Resources */,
+				1BE3DF5F21B3FCD400CF675B /* SF-Pro-Text-MediumItalic.otf in Resources */,
+				1BE3DF6021B3FCD400CF675B /* SF-Pro-Text-Regular.otf in Resources */,
+				1BE3DF6121B3FCD400CF675B /* SF-Pro-Text-RegularItalic.otf in Resources */,
+				1BE3DF6221B3FCD400CF675B /* SF-Pro-Text-Semibold.otf in Resources */,
+				1BE3DF6321B3FCD400CF675B /* SF-Pro-Text-SemiboldItalic.otf in Resources */,
+				1B2A982621AE582E00ED38E5 /* LaunchScreen.storyboard in Resources */,
+				1B2A982321AE582E00ED38E5 /* Assets.xcassets in Resources */,
+				1B2A981E21AE582D00ED38E5 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1B2A981121AE582D00ED38E5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1BE3DF1521B2650700CF675B /* CountryTableViewCell.swift in Sources */,
+				1B2A983221AE875600ED38E5 /* AddContactViewController.swift in Sources */,
+				1BE3DF1321B264ED00CF675B /* CountryViewController.swift in Sources */,
+				1B2A983021AE5C8A00ED38E5 /* ContactsTableViewCell.swift in Sources */,
+				1B2A983B21AFB70800ED38E5 /* Contacts.swift in Sources */,
+				1B2A982121AE582D00ED38E5 /* UIContacts.xcdatamodeld in Sources */,
+				1BE3DF1121B261BF00CF675B /* Constants.swift in Sources */,
+				1B2A981B21AE582D00ED38E5 /* ContactViewController.swift in Sources */,
+				1B2A981921AE582D00ED38E5 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		1B2A981C21AE582D00ED38E5 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1B2A981D21AE582D00ED38E5 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		1B2A982421AE582E00ED38E5 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1B2A982521AE582E00ED38E5 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		1B2A982821AE582E00ED38E5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		1B2A982921AE582E00ED38E5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		1B2A982B21AE582E00ED38E5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = UIContacts/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.org.UIContacts;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		1B2A982C21AE582E00ED38E5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = UIContacts/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.org.UIContacts;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1B2A981021AE582D00ED38E5 /* Build configuration list for PBXProject "UIContacts" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1B2A982821AE582E00ED38E5 /* Debug */,
+				1B2A982921AE582E00ED38E5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1B2A982A21AE582E00ED38E5 /* Build configuration list for PBXNativeTarget "UIContacts" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1B2A982B21AE582E00ED38E5 /* Debug */,
+				1B2A982C21AE582E00ED38E5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		1B2A981F21AE582D00ED38E5 /* UIContacts.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				1B2A982021AE582D00ED38E5 /* UIContacts.xcdatamodel */,
+			);
+			currentVersion = 1B2A982021AE582D00ED38E5 /* UIContacts.xcdatamodel */;
+			path = UIContacts.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 1B2A980D21AE582D00ED38E5 /* Project object */;
+}
